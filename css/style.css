@@ -2,7 +2,7 @@
   --main-font-family: Roboto, sans-serif;
   --main-color: #212121;
   --second-color: #757575;
-  --blue-color: #2196f3;
+  --blue-color: rgb(33, 150, 243);
   --white-color: #ffffff;
   --background-hero-color: #2f303a;
   --logo-color: #000000;
@@ -205,17 +205,17 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--main-color);
+  color: var(--white-color);
   border-radius: 4px;
   padding: 10px 32px;
   margin-top: 30px;
   cursor: pointer;
   background-color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:focus,
 .hero-btn:hover {
-  color: var(--white-color);
+  background: rgb(17, 102, 172);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -660,6 +660,12 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
+.modal-close-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .modal-close-btn:hover {
   fill: var(--blue-color);
 }
@@ -764,7 +770,7 @@ button {
   resize: none;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 20px;
+  
 }
 .modal-message:focus {
   border-color: var(--blue-color);
@@ -785,18 +791,17 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--logo-color);
+  color: var(--white-color);
   background: var(--blue-color);
-
   border-radius: 4px;
   padding: 10px 56px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-btn:focus,
 .modal-form-btn:hover {
-  color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: rgb(17, 102, 172);
 }
 /* FOOTER FORM */
 
@@ -838,7 +843,6 @@ button {
 }
 .footer-modal-form-btn {
   display: flex;
-
   align-items: center;
   max-width: 200px;
   font-family: var(--main-font-family);
@@ -846,17 +850,17 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--logo-color);
+  color: var(--white-color);
   background: var(--blue-color);
   border-radius: 4px;
   padding: 10px 28px;
   cursor: pointer;
   margin-left: 12px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-modal-form-btn:focus,
 .footer-modal-form-btn:hover {
-  color: var(--white-color);
+  background: rgb(17, 102, 172);;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-btn-icon {
