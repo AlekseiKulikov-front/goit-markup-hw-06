@@ -799,11 +799,10 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* FOOTER FORM */
-.footer-form-field {
+
+.footer-form {
   display: flex;
   flex-wrap: wrap;
-}
-.footer-form {
   max-width: 570px;
   margin-left: 94px;
 }
